@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Khushi Jyothi Hanuman | Resume Website</title>
+  <meta
+    name="description"
+    content="A dark red resume website for Khushi Jyothi Hanuman, blending machine learning, healthcare, leadership, dance, and purpose-driven storytelling."
+  >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Resume Website</p>
+        <h1>Khushi Jyothi Hanuman</h1>
+        <p class="hero-lede">
+          I build thoughtful AI systems with a researcher's curiosity, a performer's discipline, and a deeply personal reason for wanting my work to matter.
+        </p>
+        <p class="hero-text">
+          My world is a mix of machine learning, healthcare-inspired problem solving, public speaking, team leadership, and classical dance. I care about building systems that are intelligent, useful, and grounded in people rather than hype.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-link" href="mailto:kukshe654@gmail.com">Say Hello</a>
+          <a class="secondary-link" href="https://www.linkedin.com/in/khushi-jh-05019b271/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="secondary-link" href="https://github.com/khush-shush" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+        <div id="hero-chips" class="hero-chips"></div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-frame">
+          <img src="assets/headshot.png" alt="Portrait of Khushi Jyothi Hanuman">
+        </div>
+        <div class="mini-card">
+          <span>Current direction</span>
+          <strong>AI for healthcare, accessibility, and socially useful systems</strong>
+        </div>
+      </div>
+    </header>
+
+    <nav class="tab-bar" aria-label="Resume sections">
+      <button class="tab-button active" data-tab="overview" type="button">Overview</button>
+      <button class="tab-button" data-tab="story" type="button">My Story</button>
+      <button class="tab-button" data-tab="experience" type="button">Experience</button>
+      <button class="tab-button" data-tab="projects" type="button">Projects</button>
+      <button class="tab-button" data-tab="dance" type="button">Dance & Leadership</button>
+      <button class="tab-button" data-tab="contact" type="button">Contact</button>
+    </nav>
+
+    <main class="tab-panels">
+      <section class="tab-panel active" data-panel="overview">
+        <div class="panel-grid overview-grid">
+          <article class="card feature-card">
+            <p class="section-kicker">Quick read</p>
+            <h2>Technical, expressive, and not afraid of ambitious problems.</h2>
+            <p>
+              I am a Computer Science student at VIT Chennai with hands-on experience across computer vision, healthcare AI, genomic prediction, ranking systems, and intelligent product development. What makes my work different is that it is shaped by more than academics. It is shaped by sacrifice, performance, leadership, and purpose.
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Education</p>
+            <h2>Academic foundation</h2>
+            <div id="education-list" class="stack-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Strengths</p>
+            <h2>What teams get with me</h2>
+            <div id="strength-list" class="pill-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Selected metrics</p>
+            <h2>Numbers that help tell the story</h2>
+            <div id="stats-grid" class="stats-grid"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Certifications and exams</p>
+            <h2>Academic proof points</h2>
+            <div id="credential-list" class="stack-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Languages</p>
+            <h2>How I communicate</h2>
+            <div id="language-list" class="pill-list"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="story">
+        <div class="panel-grid story-grid">
+          <article class="card long-card">
+            <p class="section-kicker">Personal statement</p>
+            <h2>The person behind the projects</h2>
+            <div id="story-blocks" class="story-blocks"></div>
+          </article>
+          <article class="card purpose-card">
+            <p class="section-kicker">Why healthcare AI</p>
+            <h2>Where the motivation comes from</h2>
+            <p>
+              I grew up seeing healthcare both clinically and operationally through my parents' work. That made questions of cost, human error, and patient experience feel personal long before I ever wrote code. Machine learning became exciting to me because it felt like a way to reduce friction where people are at their most vulnerable.
+            </p>
+            <p>
+              I do not want to build technology for technology's sake. I want to build technology that earns its place in people's lives.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="experience">
+        <article class="card wide-card">
+          <p class="section-kicker">Experience</p>
+          <h2>Research, internships, and real build time</h2>
+          <div id="experience-list" class="timeline"></div>
+        </article>
+      </section>
+
+      <section class="tab-panel" data-panel="projects">
+        <div class="panel-grid projects-grid">
+          <article class="card wide-card">
+            <p class="section-kicker">Projects</p>
+            <h2>Work across health, safety, accessibility, and vision</h2>
+            <div id="project-grid" class="project-grid"></div>
+          </article>
+
+          <article class="card tools-card">
+            <p class="section-kicker">Tools</p>
+            <h2>Click through the stack I actually use</h2>
+            <div class="tools-layout">
+              <div id="tool-grid" class="tool-grid"></div>
+              <div class="tool-spotlight">
+                <span class="tool-spotlight-kicker">Selected tool</span>
+                <h3 id="tool-name">Python</h3>
+                <p id="tool-type" class="tool-type">Core language</p>
+                <p id="tool-description" class="tool-description">The backbone for most of my ML, data science, and backend experimentation workflows.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Current research direction</p>
+            <h2>What I am actively growing toward</h2>
+            <div id="focus-list" class="stack-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Toolbox</p>
+            <h2>Technical themes I keep returning to</h2>
+            <div id="skill-groups" class="skill-groups"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="dance">
+        <div class="panel-grid dance-grid">
+          <article class="card dance-photo-card">
+            <p class="section-kicker">Dance section</p>
+            <h2>The part of me that teaches discipline, grace, and stage presence</h2>
+            <div class="dance-gallery">
+              <figure class="dance-figure dance-figure-main">
+                <img class="dance-image" src="assets/dance1.png" alt="Khushi in a red Bharatanatyam costume">
+              </figure>
+              <figure class="dance-figure">
+                <img class="dance-image" src="assets/dance2.png" alt="Khushi performing Bharatanatyam on stage">
+              </figure>
+              <figure class="dance-figure">
+                <img class="dance-image" src="assets/dance3.png" alt="Khushi performing Bharatanatyam in Cambodia">
+              </figure>
+            </div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Beyond technical work</p>
+            <h2>Dance, MUN, management, and community</h2>
+            <div id="beyond-list" class="stack-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Performance highlights</p>
+            <h2>Where dance became discipline</h2>
+            <div id="dance-highlights" class="stack-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Leadership style</p>
+            <h2>Collaborative over hierarchical</h2>
+            <p>
+              Whether I am leading a dance team, managing event chaos, chairing Model UN, or contributing to a machine learning workflow, I care about making strong ideas visible. I do not like command-for-command's-sake leadership. I like environments where people contribute, refine, challenge, and build together.
+            </p>
+            <p>
+              That same instinct shows up in how I work on technical teams: calm under pressure, open to feedback, and focused on getting to a solution that is both smart and practical.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="tab-panel" data-panel="contact">
+        <div class="panel-grid contact-grid">
+          <article class="card">
+            <p class="section-kicker">Contact</p>
+            <h2>Let's build something meaningful.</h2>
+            <p>
+              I am especially interested in roles and opportunities around AI, machine learning, healthcare technology, research, and socially useful products.
+            </p>
+            <div id="contact-list" class="contact-list"></div>
+          </article>
+
+          <article class="card">
+            <p class="section-kicker">Closing note</p>
+            <h2>What I want to be known for</h2>
+            <p>
+              Thoughtful systems. Serious work. Strong communication. A little flair. And a consistent effort to make technology feel more human, more inclusive, and more useful than it was before I touched it.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div id="media-modal" class="media-modal hidden" aria-hidden="true">
+    <div class="media-modal-backdrop" data-close-modal="true"></div>
+    <div class="media-modal-panel" role="dialog" aria-modal="true" aria-labelledby="media-modal-title">
+      <button id="media-modal-close" class="media-modal-close" type="button" aria-label="Close preview">Close</button>
+      <p id="media-modal-title" class="media-modal-title">Preview</p>
+      <img id="media-modal-image" class="media-modal-image" src="" alt="">
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
